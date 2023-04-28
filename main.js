@@ -48,10 +48,12 @@ function game(a){
     }
 }
 function horizontalCheck(i,j){
+    //checks for horizontal winning condition
     if((signs[i]==tableVal[(j*3)])&&(signs[i]==tableVal[(j*3)+1])&&(signs[i]==tableVal[(j*3)+2]))return true;
     return false;
 }
 function verticalCheck(i,j){
+    //checks for vertical winning condition
     if((signs[i]==tableVal[j])&&(signs[i]==tableVal[j+3])&&(signs[i]==tableVal[j+6]))return true;
     return false;
 }
