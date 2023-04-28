@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>❌⭕TicTacToe⭕❌</title>
+    <link rel="icon" href="icons8-tic-tac-toe-96.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body onload="resetTable()">
+    <header><h1>❌⭕TicTacToe⭕❌</h1></header>
+    <hr />
+    <div class="main-button">
+      <button onclick="resetTable()">New Game</button>
+      <h3 id="Result"></h3>
+      <button onclick="resetScore()">Reset Score</button>
+    </div>
+    <div class="dash">
+      <table class="dash-table">
+        <tr>
+          <td id="p1">#</td>
+          <td>Player 1</td>
+          <td id="p1s">##</td>
+          <td id="Status">#######</td>
+          <td id="p2s">##</td>
+          <td>Player 2</td>
+          <td id="p2">#</td>
+        </tr>
+      </table>
+    </div>
+    <div id="Table">
+      <table>
+        <tr>
+          <td class="cells">
+            <input type="button" onclick="game(1)" id="c1" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(2)" id="c2" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(3)" id="c3" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cells">
+            <input type="button" onclick="game(4)" id="c4" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(5)" id="c5" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(6)" id="c6" />
+          </td>
+        </tr>
+        <tr>
+          <td class="cells">
+            <input type="button" onclick="game(7)" id="c7" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(8)" id="c8" />
+          </td>
+          <td class="cells">
+            <input type="button" onclick="game(9)" id="c9" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="message">
+      CLICK NEW GAME FOR NEW ROUND<br />CLICK RESET SCORE TO RESET SCORES
+    </div>
+  </body>
+</html>
